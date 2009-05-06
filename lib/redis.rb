@@ -123,7 +123,7 @@ class Redis
   
   def bulk_reply
     begin
-      x = read.chomp
+      x = read
       puts "bulk_reply read value is #{x.inspect}" if $debug
       return x
     rescue => e
